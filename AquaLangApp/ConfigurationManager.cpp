@@ -169,7 +169,8 @@ bool ConfigurationManager::GetAutoStartLink(LPTSTR Path, DWORD dwSize) const
 {
 	if(dwSize < MAX_PATH)
 		return false;
-	HRESULT hr = SHGetFolderPath(NULL, CSIDL_COMMON_STARTUP/*CSIDL_STARTUP*/, NULL, 0, Path);
+	HRESULT hr = SHGetFolderPath(NULL, /*CSIDL_COMMON_STARTUP*/CSIDL_STARTUP, NULL, 0, Path);
+	//HRESULT hr = SHGetFolderPath(NULL, CSIDL_COMMON_STARTUP/*CSIDL_STARTUP*/, NULL, 0, Path);
 	if(hr != S_OK)
 		return false;
 	_tcscat_s(Path, dwSize, _T("\\"));

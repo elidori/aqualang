@@ -1,6 +1,18 @@
 # Prerequisites
 *.d
 
+# VS stuff #
+
+*.sdf
+*.suo
+*.so
+*.db
+*.VC.db
+*.VC.opendb
+*.vs/
+*.aps
+*.user
+
 # Compiled Object files
 *.slo
 *.lo
@@ -10,11 +22,24 @@
 # Precompiled Headers
 *.gch
 *.pch
+*.ipch
+*.idb
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
+*.slo
+*.lo
+*.o
+*.obj
+*.iobj
+*.pdb
+*.ipdb
+*.ax
+*.exe
+*.lib
 *.dll
+*.exp
 
 # Fortran module files
 *.mod
@@ -30,3 +55,11 @@
 *.exe
 *.out
 *.app
+
+**/Debug/
+**/Release/
+**/Release
+**/Debug
+**/obj
+**/bin
+**/ipch

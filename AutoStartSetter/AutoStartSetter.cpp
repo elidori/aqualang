@@ -3,6 +3,8 @@
 #include <shlobj.h>
 #include <tchar.h>
 
+typedef std::basic_string<TCHAR, std::char_traits<TCHAR>, std::allocator<TCHAR> > _tstring;
+
 class ComInitializer
 {
 public:
@@ -94,13 +96,40 @@ int _tmain(int argc, TCHAR *argv[])
 		return -1;
 	}
 	bool fAdd = false;
+	_tstring appFullPath;
 	if(_tcscmp(argv[1], _T("-a")) == 0)
 	{
 		fAdd = true;
-		if(argc < 4)
+		if(argc < 3)
 		{
 			Usage();
 			return -1;
+		}
+
+		if (argc < 4)
+		{
+			LPTSTR lpsNameOffset;
+			TCHAR DllPath[256];
+			TCHAR FilePath[256];
+
+			::GetModuleFileName(
+				NULL,
+				DllPath,
+				sizeof(DllPath) / sizeof(DllPath[0])
+			);
+			::GetFullPathName(
+				DllPath,
+				sizeof(FilePath) / sizeof(FilePath[0]),
+				FilePath,
+				&lpsNameOffset
+			);
+
+			_tcscpy_s(lpsNameOffset, sizeof(FilePath) / sizeof(FilePath[0]) - (lpsNameOffset - FilePath), L"/AquaLangApp.exe");
+			appFullPath = FilePath;
+		}
+		else
+		{
+			appFullPath = argv[3];
 		}
 	}
 	else if(_tcscmp(argv[1], _T("-r")) == 0)
@@ -157,7 +186,7 @@ int _tmain(int argc, TCHAR *argv[])
 			return -1;
 		}
 
-		hr = pShellLink->SetPath(argv[3]);
+		hr = pShellLink->SetPath(appFullPath.c_str());
 		if(FAILED(hr))
 		{
 			printf("Failed setting link path (hr=0x%x)\n", hr);

@@ -268,7 +268,7 @@ bool Corpora::isWordTerminator(unsigned char c)
 {
 	if (c == ' ' || c == '.' || c==',' || c== '!' || c=='?' || c==0 || c == 10 || c == ';' || c == ':')
 		return true;
-	else 
+	else
 		return false;
 }
 
