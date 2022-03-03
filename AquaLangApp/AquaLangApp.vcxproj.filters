@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{2c2214a7-b2c6-406e-915f-60dc46cb5d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{dcbff3a2-99a2-4ddb-9414-10237f6b65d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{d7fb505b-1dd4-4915-ab36-f56b9ca81fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Version Updater">
+      <UniqueIdentifier>{6ea2a2f7-5730-4c9e-8baa-c52a880f9789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{18a9de4e-9995-435f-bf73-8d380a006842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Balloon">
+      <UniqueIdentifier>{f4317fab-2663-40cc-a921-ff57d3e5a326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Notification Area">
+      <UniqueIdentifier>{ace0cacc-5735-4ecd-a09d-730f9804377a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AquaLangApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AquaLangImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AquaLangLibLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AquaLangRemoteCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AquaLangWatchdog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArgumentsParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigAdvisorDialog.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigAdvisorManager.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationDialog.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationDialogPages.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationManager.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationXml.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="HotKeyValidator.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="TextDialog.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ApplicationDataPath.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\AquaLangWaterMark.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\BinStorage.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\BitmapImage.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ButtonBitmapHandler.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ButtonBitmapHandlerList.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\DialogIcon.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\DialogObject.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\DialogTab.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\HttpClient.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\Log.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\MessageWindow.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\MsImg32Loader.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ProcessUtils.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\StringConvert.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\StringTable.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\TextResource.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ThreadInstance.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\TimeHelpers.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ToolTip.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\UtilityWindow.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\xmlParser.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\xmlStructure.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoUpdate.cpp">
+      <Filter>Version Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoUpdateConfig.cpp">
+      <Filter>Version Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadFileListXml.cpp">
+      <Filter>Version Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDownloader.cpp">
+      <Filter>Version Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5Calculator.cpp">
+      <Filter>Version Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="UpgraderDialog.cpp">
+      <Filter>Version Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="UserNameIndicator.cpp">
+      <Filter>Version Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionUpdater.cpp">
+      <Filter>Version Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\BalloonTip.cpp">
+      <Filter>Message Balloon</Filter>
+    </ClCompile>
+    <ClCompile Include="MessagesManager.cpp">
+      <Filter>Message Balloon</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatingMenu.cpp">
+      <Filter>Notification Area</Filter>
+    </ClCompile>
+    <ClCompile Include="NotificationAreaHandler.cpp">
+      <Filter>Notification Area</Filter>
+    </ClCompile>
+    <ClCompile Include="TipOfTheDayScheduler.cpp">
+      <Filter>Notification Area</Filter>
+    </ClCompile>
+    <ClCompile Include="TipOfTheDayXml.cpp">
+      <Filter>Notification Area</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AquaLangImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AquaLangLibLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AquaLangRemoteCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AquaLangWatchdog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArgumentsParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\VersionInfo.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigAdvisorDialog.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigAdvisorManager.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationDialog.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationDialogPages.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationManager.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationMessages.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationXml.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="HotKeyValidator.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="TextDialog.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ApplicationDataPath.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\AquaLangWaterMark.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\BinStorage.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\BitmapImage.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ButtonBitmapHandler.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ButtonBitmapHandlerList.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ComHelper.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\DialogIcon.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\DialogObject.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\DialogTab.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\HttpClient.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\IProgressInfoReceiver.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\Log.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\MessageWindow.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\MsImg32Loader.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ProcessUtils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\StringConvert.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\StringTable.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\SyncHelpers.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\TextResource.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ThreadInstance.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\TimeHelpers.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ToolTip.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\UtilityWindow.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\UtilityWindowParams.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\xmlParser.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\xmlStructure.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoUpdate.h">
+      <Filter>Version Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoUpdateConfig.h">
+      <Filter>Version Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadFileListXml.h">
+      <Filter>Version Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDownloader.h">
+      <Filter>Version Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5Calculator.h">
+      <Filter>Version Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="UpgraderDialog.h">
+      <Filter>Version Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="UserNameIndicator.h">
+      <Filter>Version Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionUpdater.h">
+      <Filter>Version Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AquaLangApi.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AquaLangConfiguration.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\BalloonTip.h">
+      <Filter>Message Balloon</Filter>
+    </ClInclude>
+    <ClInclude Include="MessagesManager.h">
+      <Filter>Message Balloon</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatingMenu.h">
+      <Filter>Notification Area</Filter>
+    </ClInclude>
+    <ClInclude Include="IConfigUpdateListener.h">
+      <Filter>Notification Area</Filter>
+    </ClInclude>
+    <ClInclude Include="NotificationAreaHandler.h">
+      <Filter>Notification Area</Filter>
+    </ClInclude>
+    <ClInclude Include="TipOfTheDayScheduler.h">
+      <Filter>Notification Area</Filter>
+    </ClInclude>
+    <ClInclude Include="TipOfTheDayXml.h">
+      <Filter>Notification Area</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ApplicationAlreadyRunning.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ApplicationRunning.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ApplicationStartError.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ApplicationStopped.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\AquaLangSetup\res\AquaLang.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\AquaLangConfigAdvisor.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\AquaLangSetup\res\AquaLangDisabled.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\AquaLangUpdates.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\License.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AquaLangApp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

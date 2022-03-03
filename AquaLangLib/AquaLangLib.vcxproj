@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8AB52B70-5E0D-442D-A0B8-0C9B6972B141}</ProjectGuid>
+    <RootNamespace>AquaLangLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\dlls\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\dlls\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include;../Utilities;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AQUALANGLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>AquaLangLib.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../Lib/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../Include;../Utilities;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;AQUALANGLIB_EXPORTS;WINVER=0x0500;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>AquaLangLib.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../Lib/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AquaLangApi.cpp" />
+    <ClCompile Include="AquaLangManager.cpp" />
+    <ClCompile Include="BasicCompactTip.cpp" />
+    <ClCompile Include="ClipboardAccess.cpp" />
+    <ClCompile Include="CompactTip.cpp" />
+    <ClCompile Include="Corpora.cpp" />
+    <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="FocusInfo.cpp" />
+    <ClCompile Include="GuessLanguageHandler.cpp" />
+    <ClCompile Include="GuessLanguageTip.cpp" />
+    <ClCompile Include="Pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PeriodicEvaluationHandler.cpp" />
+    <ClCompile Include="ScreenFitter.cpp" />
+    <ClCompile Include="AsyncHookDispatcher.cpp" />
+    <ClCompile Include="HookHandler.cpp" />
+    <ClCompile Include="KeyboardHookDispatcher.cpp" />
+    <ClCompile Include="MessageHookDispatcher.cpp" />
+    <ClCompile Include="MouseHookDispatcher.cpp" />
+    <ClCompile Include="ShellHookDispatcher.cpp" />
+    <ClCompile Include="WindowHookListenerAsyncWrapper.cpp" />
+    <ClCompile Include="LanguageStringTable.cpp" />
+    <ClCompile Include="PsApiLoader.cpp" />
+    <ClCompile Include="WindowItem.cpp" />
+    <ClCompile Include="WindowItemDataBase.cpp" />
+    <ClCompile Include="WindowItemProperty.cpp" />
+    <ClCompile Include="WindowItemPropertyList.cpp" />
+    <ClCompile Include="WindowItemPropertyTypes.cpp" />
+    <ClCompile Include="xmlValueTypes.cpp" />
+    <ClCompile Include="..\Utilities\BalloonTip.cpp" />
+    <ClCompile Include="DebugBalloonTip.cpp" />
+    <ClCompile Include="UserInfoConfiguration.cpp" />
+    <ClCompile Include="UserInformationNotifier.cpp" />
+    <ClCompile Include="WebMessageSender.cpp" />
+    <ClCompile Include="..\Utilities\ApplicationDataPath.cpp" />
+    <ClCompile Include="..\Utilities\AquaLangWaterMark.cpp" />
+    <ClCompile Include="..\Utilities\BinStorage.cpp" />
+    <ClCompile Include="..\Utilities\BitmapImage.cpp" />
+    <ClCompile Include="..\Utilities\ButtonBitmapHandler.cpp" />
+    <ClCompile Include="..\Utilities\ButtonBitmapHandlerList.cpp" />
+    <ClCompile Include="..\Utilities\DialogIcon.cpp" />
+    <ClCompile Include="..\Utilities\DialogObject.cpp" />
+    <ClCompile Include="..\Utilities\DialogTab.cpp" />
+    <ClCompile Include="..\Utilities\HttpClient.cpp" />
+    <ClCompile Include="..\Utilities\Log.cpp" />
+    <ClCompile Include="..\Utilities\MessageWindow.cpp" />
+    <ClCompile Include="..\Utilities\MsImg32Loader.cpp" />
+    <ClCompile Include="..\Utilities\ProcessUtils.cpp" />
+    <ClCompile Include="..\Utilities\StringConvert.cpp" />
+    <ClCompile Include="..\Utilities\StringTable.cpp" />
+    <ClCompile Include="..\Utilities\TextResource.cpp" />
+    <ClCompile Include="..\Utilities\ThreadInstance.cpp" />
+    <ClCompile Include="..\Utilities\TimeHelpers.cpp" />
+    <ClCompile Include="..\Utilities\ToolTip.cpp" />
+    <ClCompile Include="..\Utilities\UtilityWindow.cpp" />
+    <ClCompile Include="..\Utilities\xmlParser.cpp" />
+    <ClCompile Include="..\Utilities\xmlStructure.cpp" />
+    <ClCompile Include="TextAdvisorTip.cpp" />
+    <ClCompile Include="TextConvertAdvisor.cpp" />
+    <ClCompile Include="TextLanguageConverter.cpp" />
+    <ClCompile Include="RemoteWebBrowser.cpp" />
+    <ClCompile Include="SearchEngine.cpp" />
+    <ClCompile Include="SimpleOleClientSite.cpp" />
+    <ClCompile Include="TranslateEngine.cpp" />
+    <ClCompile Include="WebBrowseControl.cpp" />
+    <ClCompile Include="WebBrowseDialog.cpp" />
+    <ClCompile Include="WebBrowseDialogPage.cpp" />
+    <ClCompile Include="WebBrowseRequest.cpp" />
+    <ClCompile Include="WebBrowserXml.cpp" />
+    <ClCompile Include="WebSearchHandler.cpp" />
+    <ClCompile Include="Fifo.cpp" />
+    <ClCompile Include="IndexMarker.cpp" />
+    <ClCompile Include="KeyboardEventInfo.cpp" />
+    <ClCompile Include="KeyboardMapper.cpp" />
+    <ClCompile Include="KeyboardSequence.cpp" />
+    <ClCompile Include="KeyboardSequenceClient.cpp" />
+    <ClCompile Include="KeyboardSequenceEvent.cpp" />
+    <ClCompile Include="KeyCode.cpp" />
+    <ClCompile Include="LanguageDetector.cpp" />
+    <ClCompile Include="LatestUIEvent.cpp" />
+    <ClCompile Include="RecentText.cpp" />
+    <ClCompile Include="StickyKeysEnabler.cpp" />
+    <ClCompile Include="CalculatorHandler.cpp" />
+    <ClCompile Include="CalculatorPopupHandler.cpp" />
+    <ClCompile Include="CalculatorTip.cpp" />
+    <ClCompile Include="CompactCalculatorTip.cpp" />
+    <ClCompile Include="DialogTemplateParser.cpp" />
+    <ClCompile Include="expressionFilter.cpp" />
+    <ClCompile Include="infixNode.cpp" />
+    <ClCompile Include="infixString.cpp" />
+    <ClCompile Include="TransparentEditBox.cpp" />
+    <ClCompile Include="AsyncEventHandler.cpp" />
+    <ClCompile Include="FocusChangeEvent.cpp" />
+    <ClCompile Include="LanguageHandler.cpp" />
+    <ClCompile Include="ClipboardSwapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AquaLangManager.h" />
+    <ClInclude Include="BasicCompactTip.h" />
+    <ClInclude Include="ClipboardAccess.h" />
+    <ClInclude Include="CompactTip.h" />
+    <ClInclude Include="Corpora.h" />
+    <ClInclude Include="FocusInfo.h" />
+    <ClInclude Include="GuessLanguageHandler.h" />
+    <ClInclude Include="GuessLanguageTip.h" />
+    <ClInclude Include="ICompactTipResult.h" />
+    <ClInclude Include="ILanguageModifier.h" />
+    <ClInclude Include="ITextConverter.h" />
+    <ClInclude Include="IThreadReleatedObject.h" />
+    <ClInclude Include="IUIEventListener.h" />
+    <ClInclude Include="Pch.h" />
+    <ClInclude Include="PeriodicEvaluationHandler.h" />
+    <ClInclude Include="ScreenFitter.h" />
+    <ClInclude Include="StringSizeLimits.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\Include\VersionInfo.h" />
+    <ClInclude Include="AsyncHookDispatcher.h" />
+    <ClInclude Include="HookDispatcher.h" />
+    <ClInclude Include="HookHandler.h" />
+    <ClInclude Include="KeyboardHookDispatcher.h" />
+    <ClInclude Include="MessageHookDispatcher.h" />
+    <ClInclude Include="MouseHookDispatcher.h" />
+    <ClInclude Include="ObjectPool.h" />
+    <ClInclude Include="ShellHookDispatcher.h" />
+    <ClInclude Include="TipCoordinator.h" />
+    <ClInclude Include="WindowHookListenerAsyncWrapper.h" />
+    <ClInclude Include="WinHookListener.h" />
+    <ClInclude Include="WinHookListenerList.h" />
+    <ClInclude Include="WinHookListenerMap.h" />
+    <ClInclude Include="WinHookPrioritizedListenerList.h" />
+    <ClInclude Include="WinHookResult.h" />
+    <ClInclude Include="..\Include\AquaLangApi.h" />
+    <ClInclude Include="..\Include\AquaLangConfiguration.h" />
+    <ClInclude Include="..\Include\AquaLangStatistics.h" />
+    <ClInclude Include="LanguageStringTable.h" />
+    <ClInclude Include="PsApiLoader.h" />
+    <ClInclude Include="WindowItem.h" />
+    <ClInclude Include="WindowItemDataBase.h" />
+    <ClInclude Include="WindowItemProperty.h" />
+    <ClInclude Include="WindowItemPropertyList.h" />
+    <ClInclude Include="WindowItemPropertyTypes.h" />
+    <ClInclude Include="xmlValueTypes.h" />
+    <ClInclude Include="..\Utilities\BalloonTip.h" />
+    <ClInclude Include="DebugBalloonTip.h" />
+    <ClInclude Include="UserInfoConfiguration.h" />
+    <ClInclude Include="UserInformationNotifier.h" />
+    <ClInclude Include="WebMessageSender.h" />
+    <ClInclude Include="..\Utilities\ApplicationDataPath.h" />
+    <ClInclude Include="..\Utilities\AquaLangWaterMark.h" />
+    <ClInclude Include="..\Utilities\BinStorage.h" />
+    <ClInclude Include="..\Utilities\BitmapImage.h" />
+    <ClInclude Include="..\Utilities\ButtonBitmapHandler.h" />
+    <ClInclude Include="..\Utilities\ButtonBitmapHandlerList.h" />
+    <ClInclude Include="..\Utilities\ComInitializer.h" />
+    <ClInclude Include="..\Utilities\DialogIcon.h" />
+    <ClInclude Include="..\Utilities\DialogObject.h" />
+    <ClInclude Include="..\Utilities\DialogTab.h" />
+    <ClInclude Include="..\Utilities\HttpClient.h" />
+    <ClInclude Include="..\Utilities\IProgressInfoReceiver.h" />
+    <ClInclude Include="..\Utilities\MessageWindow.h" />
+    <ClInclude Include="..\Utilities\MsImg32Loader.h" />
+    <ClInclude Include="..\Utilities\ProcessUtils.h" />
+    <ClInclude Include="..\Utilities\StringConvert.h" />
+    <ClInclude Include="..\Utilities\StringTable.h" />
+    <ClInclude Include="..\Utilities\SyncHelpers.h" />
+    <ClInclude Include="..\Utilities\TextResource.h" />
+    <ClInclude Include="..\Utilities\ThreadInstance.h" />
+    <ClInclude Include="..\Utilities\TimeHelpers.h" />
+    <ClInclude Include="..\Utilities\ToolTip.h" />
+    <ClInclude Include="..\Utilities\UtilityWindow.h" />
+    <ClInclude Include="..\Utilities\UtilityWindowParams.h" />
+    <ClInclude Include="..\Utilities\xmlParser.h" />
+    <ClInclude Include="..\Utilities\xmlStructure.h" />
+    <ClInclude Include="ITextChangeClient.h" />
+    <ClInclude Include="TextAdvisorTip.h" />
+    <ClInclude Include="TextConvertAdvisor.h" />
+    <ClInclude Include="TextLanguageConverter.h" />
+    <ClInclude Include="RemoteWebBrowser.h" />
+    <ClInclude Include="SearchEngine.h" />
+    <ClInclude Include="SimpleOleClientSite.h" />
+    <ClInclude Include="TranslateEngine.h" />
+    <ClInclude Include="WebBrowseControl.h" />
+    <ClInclude Include="WebBrowseDialog.h" />
+    <ClInclude Include="WebBrowseDialogPage.h" />
+    <ClInclude Include="WebBrowseRequest.h" />
+    <ClInclude Include="WebBrowserXml.h" />
+    <ClInclude Include="WebBrowseSharedMemStruct.h" />
+    <ClInclude Include="WebSearchHandler.h" />
+    <ClInclude Include="Fifo.h" />
+    <ClInclude Include="IFocusChangeListener.h" />
+    <ClInclude Include="IKeyboardEvent.h" />
+    <ClInclude Include="IKeyboardEventCallback.h" />
+    <ClInclude Include="IndexMarker.h" />
+    <ClInclude Include="KeyboardDefinitions.h" />
+    <ClInclude Include="KeyboardEventInfo.h" />
+    <ClInclude Include="KeyboardMapper.h" />
+    <ClInclude Include="KeyboardSequence.h" />
+    <ClInclude Include="KeyboardSequenceClient.h" />
+    <ClInclude Include="KeyboardSequenceEvent.h" />
+    <ClInclude Include="KeyCode.h" />
+    <ClInclude Include="LanguageDetector.h" />
+    <ClInclude Include="LatestUIEvent.h" />
+    <ClInclude Include="RecentText.h" />
+    <ClInclude Include="StickyKeysEnabler.h" />
+    <ClInclude Include="CalculatorHandler.h" />
+    <ClInclude Include="CalculatorPopupHandler.h" />
+    <ClInclude Include="CalculatorTip.h" />
+    <ClInclude Include="CompactCalculatorTip.h" />
+    <ClInclude Include="DialogTemplateParser.h" />
+    <ClInclude Include="expressionFilter.h" />
+    <ClInclude Include="ICalcTipResult.h" />
+    <ClInclude Include="infixNode.h" />
+    <ClInclude Include="infixString.h" />
+    <ClInclude Include="TransparentEditBox.h" />
+    <ClInclude Include="AsyncEventHandler.h" />
+    <ClInclude Include="FocusChangeEvent.h" />
+    <ClInclude Include="LanguageHandler.h" />
+    <ClInclude Include="ClipboardSwapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\AquaLangSetup\res\AquaLang.ico" />
+    <None Include="res\AquaLangIcon.bmp" />
+    <None Include="res\CalcBitmaps\Button-DEG_RAD-Pressed.bmp" />
+    <None Include="res\CalcBitmaps\Button-DEG_RAD.bmp" />
+    <None Include="res\LanguageTable.txt" />
+    <None Include="res\LeftDownBalloon.bmp" />
+    <None Include="res\LeftUpBalloon.bmp" />
+    <None Include="res\LiteLeftDownBalloon.bmp" />
+    <None Include="res\LiteLeftUpBalloon.bmp" />
+    <None Include="res\LiteRightDownBalloon.bmp" />
+    <None Include="res\LiteRightUpBalloon.bmp" />
+    <None Include="res\RightDownBalloon.bmp" />
+    <None Include="res\RightUpBalloon.bmp" />
+    <None Include="res\TextAdvisorClose-MO.bmp" />
+    <None Include="res\TextAdvisorClose-Normal.bmp" />
+    <None Include="res\TextAdvisorClose-Pressed.bmp" />
+    <None Include="res\CalcBitmaps\Button-Div-MO.bmp" />
+    <None Include="res\CalcBitmaps\Button-Div-Normal.bmp" />
+    <None Include="res\CalcBitmaps\Button-Div-Pressed.bmp" />
+    <None Include="res\CalcBitmaps\Button-MO.bmp" />
+    <None Include="res\CalcBitmaps\Button-Normal.bmp" />
+    <None Include="res\CalcBitmaps\Button-Pressed.bmp" />
+    <None Include="res\CalcBitmaps\Button-Reduce-MO.bmp" />
+    <None Include="res\CalcBitmaps\Button-Reduce-Normal.bmp" />
+    <None Include="res\CalcBitmaps\Button-Reduce-Pressed.bmp" />
+    <None Include="res\CalcBitmaps\Calculator.bmp" />
+    <None Include="res\CalcBitmaps\StaticRect.bmp" />
+    <None Include="AquaLangLib.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AquaLangLib.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AquaLangLib.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93B493C0-77D0-4942-AB32-68D35C432D95}</ProjectGuid>
+    <RootNamespace>AquaLangApp</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\dlls\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\dlls\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;../include;../Utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./;../include;../Utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AquaLangApp.cpp" />
+    <ClCompile Include="AquaLangImpl.cpp" />
+    <ClCompile Include="AquaLangLibLoader.cpp" />
+    <ClCompile Include="AquaLangRemoteCommand.cpp" />
+    <ClCompile Include="AquaLangWatchdog.cpp" />
+    <ClCompile Include="ArgumentsParser.cpp" />
+    <ClCompile Include="Pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ConfigAdvisorDialog.cpp" />
+    <ClCompile Include="ConfigAdvisorManager.cpp" />
+    <ClCompile Include="ConfigurationDialog.cpp" />
+    <ClCompile Include="ConfigurationDialogPages.cpp" />
+    <ClCompile Include="ConfigurationManager.cpp" />
+    <ClCompile Include="ConfigurationXml.cpp" />
+    <ClCompile Include="HotKeyValidator.cpp" />
+    <ClCompile Include="TextDialog.cpp" />
+    <ClCompile Include="..\Utilities\ApplicationDataPath.cpp" />
+    <ClCompile Include="..\Utilities\AquaLangWaterMark.cpp" />
+    <ClCompile Include="..\Utilities\BinStorage.cpp" />
+    <ClCompile Include="..\Utilities\BitmapImage.cpp" />
+    <ClCompile Include="..\Utilities\ButtonBitmapHandler.cpp" />
+    <ClCompile Include="..\Utilities\ButtonBitmapHandlerList.cpp" />
+    <ClCompile Include="..\Utilities\DialogIcon.cpp" />
+    <ClCompile Include="..\Utilities\DialogObject.cpp" />
+    <ClCompile Include="..\Utilities\DialogTab.cpp" />
+    <ClCompile Include="..\Utilities\HttpClient.cpp" />
+    <ClCompile Include="..\Utilities\Log.cpp" />
+    <ClCompile Include="..\Utilities\MessageWindow.cpp" />
+    <ClCompile Include="..\Utilities\MsImg32Loader.cpp" />
+    <ClCompile Include="..\Utilities\ProcessUtils.cpp" />
+    <ClCompile Include="..\Utilities\StringConvert.cpp" />
+    <ClCompile Include="..\Utilities\StringTable.cpp" />
+    <ClCompile Include="..\Utilities\TextResource.cpp" />
+    <ClCompile Include="..\Utilities\ThreadInstance.cpp" />
+    <ClCompile Include="..\Utilities\TimeHelpers.cpp" />
+    <ClCompile Include="..\Utilities\ToolTip.cpp" />
+    <ClCompile Include="..\Utilities\UtilityWindow.cpp" />
+    <ClCompile Include="..\Utilities\xmlParser.cpp" />
+    <ClCompile Include="..\Utilities\xmlStructure.cpp" />
+    <ClCompile Include="AutoUpdate.cpp" />
+    <ClCompile Include="AutoUpdateConfig.cpp" />
+    <ClCompile Include="DownloadFileListXml.cpp" />
+    <ClCompile Include="FileDownloader.cpp" />
+    <ClCompile Include="MD5Calculator.cpp" />
+    <ClCompile Include="UpgraderDialog.cpp" />
+    <ClCompile Include="UserNameIndicator.cpp" />
+    <ClCompile Include="VersionUpdater.cpp" />
+    <ClCompile Include="..\Utilities\BalloonTip.cpp" />
+    <ClCompile Include="MessagesManager.cpp" />
+    <ClCompile Include="FloatingMenu.cpp" />
+    <ClCompile Include="NotificationAreaHandler.cpp" />
+    <ClCompile Include="TipOfTheDayScheduler.cpp" />
+    <ClCompile Include="TipOfTheDayXml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AquaLangImpl.h" />
+    <ClInclude Include="AquaLangLibLoader.h" />
+    <ClInclude Include="AquaLangRemoteCommand.h" />
+    <ClInclude Include="AquaLangWatchdog.h" />
+    <ClInclude Include="ArgumentsParser.h" />
+    <ClInclude Include="Pch.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\Include\VersionInfo.h" />
+    <ClInclude Include="ConfigAdvisorDialog.h" />
+    <ClInclude Include="ConfigAdvisorManager.h" />
+    <ClInclude Include="ConfigurationDialog.h" />
+    <ClInclude Include="ConfigurationDialogPages.h" />
+    <ClInclude Include="ConfigurationManager.h" />
+    <ClInclude Include="ConfigurationMessages.h" />
+    <ClInclude Include="ConfigurationXml.h" />
+    <ClInclude Include="HotKeyValidator.h" />
+    <ClInclude Include="TextDialog.h" />
+    <ClInclude Include="..\Utilities\ApplicationDataPath.h" />
+    <ClInclude Include="..\Utilities\AquaLangWaterMark.h" />
+    <ClInclude Include="..\Utilities\BinStorage.h" />
+    <ClInclude Include="..\Utilities\BitmapImage.h" />
+    <ClInclude Include="..\Utilities\ButtonBitmapHandler.h" />
+    <ClInclude Include="..\Utilities\ButtonBitmapHandlerList.h" />
+    <ClInclude Include="..\Utilities\ComHelper.h" />
+    <ClInclude Include="..\Utilities\DialogIcon.h" />
+    <ClInclude Include="..\Utilities\DialogObject.h" />
+    <ClInclude Include="..\Utilities\DialogTab.h" />
+    <ClInclude Include="..\Utilities\HttpClient.h" />
+    <ClInclude Include="..\Utilities\IProgressInfoReceiver.h" />
+    <ClInclude Include="..\Utilities\Log.h" />
+    <ClInclude Include="..\Utilities\MessageWindow.h" />
+    <ClInclude Include="..\Utilities\MsImg32Loader.h" />
+    <ClInclude Include="..\Utilities\ProcessUtils.h" />
+    <ClInclude Include="..\Utilities\StringConvert.h" />
+    <ClInclude Include="..\Utilities\StringTable.h" />
+    <ClInclude Include="..\Utilities\SyncHelpers.h" />
+    <ClInclude Include="..\Utilities\TextResource.h" />
+    <ClInclude Include="..\Utilities\ThreadInstance.h" />
+    <ClInclude Include="..\Utilities\TimeHelpers.h" />
+    <ClInclude Include="..\Utilities\ToolTip.h" />
+    <ClInclude Include="..\Utilities\UtilityWindow.h" />
+    <ClInclude Include="..\Utilities\UtilityWindowParams.h" />
+    <ClInclude Include="..\Utilities\xmlParser.h" />
+    <ClInclude Include="..\Utilities\xmlStructure.h" />
+    <ClInclude Include="AutoUpdate.h" />
+    <ClInclude Include="AutoUpdateConfig.h" />
+    <ClInclude Include="DownloadFileListXml.h" />
+    <ClInclude Include="FileDownloader.h" />
+    <ClInclude Include="MD5Calculator.h" />
+    <ClInclude Include="UpgraderDialog.h" />
+    <ClInclude Include="UserNameIndicator.h" />
+    <ClInclude Include="VersionUpdater.h" />
+    <ClInclude Include="..\Include\AquaLangApi.h" />
+    <ClInclude Include="..\Include\AquaLangConfiguration.h" />
+    <ClInclude Include="..\Utilities\BalloonTip.h" />
+    <ClInclude Include="MessagesManager.h" />
+    <ClInclude Include="FloatingMenu.h" />
+    <ClInclude Include="IConfigUpdateListener.h" />
+    <ClInclude Include="NotificationAreaHandler.h" />
+    <ClInclude Include="TipOfTheDayScheduler.h" />
+    <ClInclude Include="TipOfTheDayXml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ApplicationAlreadyRunning.bmp" />
+    <None Include="res\ApplicationRunning.bmp" />
+    <None Include="res\ApplicationStartError.bmp" />
+    <None Include="res\ApplicationStopped.bmp" />
+    <None Include="..\AquaLangSetup\res\AquaLang.ico" />
+    <None Include="res\AquaLangConfigAdvisor.bmp" />
+    <None Include="..\AquaLangSetup\res\AquaLangDisabled.ico" />
+    <None Include="res\AquaLangUpdates.bmp" />
+    <None Include="res\License.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AquaLangApp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AquaLangLib\AquaLangLib.vcxproj">
+      <Project>{8ab52b70-5e0d-442d-a0b8-0c9b6972b141}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

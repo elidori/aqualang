@@ -1,0 +1,16 @@
+LIBRARY	"AquaLangLib"
+EXPORTS
+
+OpenAquaLangA
+OpenAquaLangW
+CloseAquaLang		
+RunBrowserA
+RunBrowserW
+TriggerCalculator
+GetAquaLangStatistics
+PrintKey
+CreateKeySequenceValidatorA
+CreateKeySequenceValidatorW
+DeleteKeySequenceValidator
+AreSequencesEqual
+IsContainedBySequence

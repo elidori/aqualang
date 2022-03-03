@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Calculator Bitmaps">
+      <UniqueIdentifier>{f56b926f-ace5-40af-ab79-5d0b884e594d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinHooks">
+      <UniqueIdentifier>{d40ea647-2a2c-41f4-bb5a-c20abaab7c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{ed49a4d1-6e70-4599-bdd3-4236c9f9e477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window Item DataBase">
+      <UniqueIdentifier>{e84bcedc-a9dd-4529-9439-ef816658b6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageBalloon">
+      <UniqueIdentifier>{c9b6106a-e9ba-4038-8b71-65c84b5b0dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInfo">
+      <UniqueIdentifier>{ab2f1a2b-aae6-45d3-8423-52e8535f4d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{baed2a8e-5898-4f06-8402-c30baf33069d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TextConverter">
+      <UniqueIdentifier>{4eec4632-1509-4847-afbd-0dc746ddc780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Web Browse">
+      <UniqueIdentifier>{badf8234-68f2-440f-82ed-9930ae1d6b8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KeyboardSequence">
+      <UniqueIdentifier>{db1483af-d2e2-4478-9ab9-2647bb9ca244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calculator">
+      <UniqueIdentifier>{e7c14ce5-ecf3-446a-bb99-5193b4292cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Language Handler">
+      <UniqueIdentifier>{108c8ab3-9887-4718-b1ee-2f617331170a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClipboardSwapper">
+      <UniqueIdentifier>{eef599f8-0b9d-4fd5-8109-6427ce072186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GuessLanguage">
+      <UniqueIdentifier>{b752d780-3d2c-4f5e-b466-4221e442a385}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AquaLangApi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AquaLangManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClipboardAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FocusInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenFitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncHookDispatcher.cpp">
+      <Filter>WinHooks</Filter>
+    </ClCompile>
+    <ClCompile Include="HookHandler.cpp">
+      <Filter>WinHooks</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardHookDispatcher.cpp">
+      <Filter>WinHooks</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageHookDispatcher.cpp">
+      <Filter>WinHooks</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseHookDispatcher.cpp">
+      <Filter>WinHooks</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellHookDispatcher.cpp">
+      <Filter>WinHooks</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowHookListenerAsyncWrapper.cpp">
+      <Filter>WinHooks</Filter>
+    </ClCompile>
+    <ClCompile Include="LanguageStringTable.cpp">
+      <Filter>Window Item DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="PsApiLoader.cpp">
+      <Filter>Window Item DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowItem.cpp">
+      <Filter>Window Item DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowItemDataBase.cpp">
+      <Filter>Window Item DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowItemProperty.cpp">
+      <Filter>Window Item DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowItemPropertyList.cpp">
+      <Filter>Window Item DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowItemPropertyTypes.cpp">
+      <Filter>Window Item DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlValueTypes.cpp">
+      <Filter>Window Item DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\BalloonTip.cpp">
+      <Filter>MessageBalloon</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugBalloonTip.cpp">
+      <Filter>MessageBalloon</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInfoConfiguration.cpp">
+      <Filter>UserInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInformationNotifier.cpp">
+      <Filter>UserInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="WebMessageSender.cpp">
+      <Filter>UserInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ApplicationDataPath.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\AquaLangWaterMark.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\BinStorage.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\BitmapImage.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ButtonBitmapHandler.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ButtonBitmapHandlerList.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\DialogIcon.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\DialogObject.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\DialogTab.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\HttpClient.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\Log.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\MessageWindow.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\MsImg32Loader.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ProcessUtils.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\StringConvert.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\StringTable.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\TextResource.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ThreadInstance.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\TimeHelpers.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\ToolTip.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\UtilityWindow.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\xmlParser.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\xmlStructure.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="TextAdvisorTip.cpp">
+      <Filter>TextConverter</Filter>
+    </ClCompile>
+    <ClCompile Include="TextConvertAdvisor.cpp">
+      <Filter>TextConverter</Filter>
+    </ClCompile>
+    <ClCompile Include="TextLanguageConverter.cpp">
+      <Filter>TextConverter</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteWebBrowser.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchEngine.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleOleClientSite.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="TranslateEngine.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="WebBrowseControl.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="WebBrowseDialog.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="WebBrowseDialogPage.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="WebBrowseRequest.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="WebBrowserXml.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="WebSearchHandler.cpp">
+      <Filter>Web Browse</Filter>
+    </ClCompile>
+    <ClCompile Include="Fifo.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexMarker.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardEventInfo.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardMapper.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardSequence.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardSequenceClient.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardSequenceEvent.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyCode.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="LanguageDetector.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="LatestUIEvent.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="RecentText.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="StickyKeysEnabler.cpp">
+      <Filter>KeyboardSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorHandler.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorPopupHandler.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorTip.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="CompactCalculatorTip.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogTemplateParser.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="expressionFilter.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="infixNode.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="infixString.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TransparentEditBox.cpp">
+      <Filter>Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncEventHandler.cpp">
+      <Filter>Language Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="FocusChangeEvent.cpp">
+      <Filter>Language Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="LanguageHandler.cpp">
+      <Filter>Language Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ClipboardSwapper.cpp">
+      <Filter>ClipboardSwapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Corpora.cpp">
+      <Filter>GuessLanguage</Filter>
+    </ClCompile>
+    <ClCompile Include="GuessLanguageHandler.cpp">
+      <Filter>GuessLanguage</Filter>
+    </ClCompile>
+    <ClCompile Include="GuessLanguageTip.cpp">
+      <Filter>GuessLanguage</Filter>
+    </ClCompile>
+    <ClCompile Include="CompactTip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PeriodicEvaluationHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicCompactTip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AquaLangManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipboardAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FocusInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ILanguageModifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IThreadReleatedObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IUIEventListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenFitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringSizeLimits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\VersionInfo.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncHookDispatcher.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="HookDispatcher.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="HookHandler.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardHookDispatcher.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageHookDispatcher.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseHookDispatcher.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellHookDispatcher.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowHookListenerAsyncWrapper.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="WinHookListener.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="WinHookListenerList.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="WinHookListenerMap.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="WinHookPrioritizedListenerList.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="WinHookResult.h">
+      <Filter>WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AquaLangApi.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AquaLangConfiguration.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AquaLangStatistics.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="LanguageStringTable.h">
+      <Filter>Window Item DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="PsApiLoader.h">
+      <Filter>Window Item DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowItem.h">
+      <Filter>Window Item DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowItemDataBase.h">
+      <Filter>Window Item DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowItemProperty.h">
+      <Filter>Window Item DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowItemPropertyList.h">
+      <Filter>Window Item DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowItemPropertyTypes.h">
+      <Filter>Window Item DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlValueTypes.h">
+      <Filter>Window Item DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\BalloonTip.h">
+      <Filter>MessageBalloon</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugBalloonTip.h">
+      <Filter>MessageBalloon</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfoConfiguration.h">
+      <Filter>UserInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInformationNotifier.h">
+      <Filter>UserInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="WebMessageSender.h">
+      <Filter>UserInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ApplicationDataPath.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\AquaLangWaterMark.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\BinStorage.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\BitmapImage.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ButtonBitmapHandler.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ButtonBitmapHandlerList.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ComInitializer.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\DialogIcon.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\DialogObject.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\DialogTab.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\HttpClient.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\IProgressInfoReceiver.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\MessageWindow.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\MsImg32Loader.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ProcessUtils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\StringConvert.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\StringTable.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\SyncHelpers.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\TextResource.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ThreadInstance.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\TimeHelpers.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\ToolTip.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\UtilityWindow.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\UtilityWindowParams.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\xmlParser.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\xmlStructure.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextChangeClient.h">
+      <Filter>TextConverter</Filter>
+    </ClInclude>
+    <ClInclude Include="TextAdvisorTip.h">
+      <Filter>TextConverter</Filter>
+    </ClInclude>
+    <ClInclude Include="TextConvertAdvisor.h">
+      <Filter>TextConverter</Filter>
+    </ClInclude>
+    <ClInclude Include="TextLanguageConverter.h">
+      <Filter>TextConverter</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteWebBrowser.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchEngine.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleOleClientSite.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="TranslateEngine.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="WebBrowseControl.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="WebBrowseDialog.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="WebBrowseDialogPage.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="WebBrowseRequest.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="WebBrowserXml.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="WebBrowseSharedMemStruct.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="WebSearchHandler.h">
+      <Filter>Web Browse</Filter>
+    </ClInclude>
+    <ClInclude Include="Fifo.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="IFocusChangeListener.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="IKeyboardEvent.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="IKeyboardEventCallback.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexMarker.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardDefinitions.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEventInfo.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardMapper.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardSequence.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardSequenceClient.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardSequenceEvent.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyCode.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="LanguageDetector.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="LatestUIEvent.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="RecentText.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="StickyKeysEnabler.h">
+      <Filter>KeyboardSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorHandler.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorPopupHandler.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorTip.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="CompactCalculatorTip.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogTemplateParser.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="expressionFilter.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalcTipResult.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="infixNode.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="infixString.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="TransparentEditBox.h">
+      <Filter>Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncEventHandler.h">
+      <Filter>Language Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="FocusChangeEvent.h">
+      <Filter>Language Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="LanguageHandler.h">
+      <Filter>Language Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipboardSwapper.h">
+      <Filter>ClipboardSwapper</Filter>
+    </ClInclude>
+    <ClInclude Include="GuessLanguageTip.h">
+      <Filter>GuessLanguage</Filter>
+    </ClInclude>
+    <ClInclude Include="Corpora.h">
+      <Filter>GuessLanguage</Filter>
+    </ClInclude>
+    <ClInclude Include="GuessLanguageHandler.h">
+      <Filter>GuessLanguage</Filter>
+    </ClInclude>
+    <ClInclude Include="CompactTip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICompactTipResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PeriodicEvaluationHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextConverter.h">
+      <Filter>TextConverter</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicCompactTip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TipCoordinator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\AquaLangSetup\res\AquaLang.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\AquaLangIcon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-DEG_RAD-Pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-DEG_RAD.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LanguageTable.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LeftDownBalloon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LeftUpBalloon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LiteLeftDownBalloon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LiteLeftUpBalloon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LiteRightDownBalloon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LiteRightUpBalloon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RightDownBalloon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RightUpBalloon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TextAdvisorClose-MO.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TextAdvisorClose-Normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TextAdvisorClose-Pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-Div-MO.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-Div-Normal.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-Div-Pressed.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-MO.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-Normal.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-Pressed.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-Reduce-MO.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-Reduce-Normal.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Button-Reduce-Pressed.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\Calculator.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="res\CalcBitmaps\StaticRect.bmp">
+      <Filter>Resource Files\Calculator Bitmaps</Filter>
+    </None>
+    <None Include="AquaLangLib.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AquaLangLib.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
