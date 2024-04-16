@@ -416,8 +416,8 @@ IDB_FILE_LICENSE_TERMS  BIN                     "res\\License.txt"
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_ICON_DROP           ICON                    "..\\AquaLangSetup\\res\\AquaLang.ico"
-IDI_ICON_DROP_DISABLED  ICON                    "..\\AquaLangSetup\\res\\AquaLangDisabled.ico"
+IDI_ICON_DROP           ICON                    "..\\AquaLangSetup\\AquaLang.ico"
+IDI_ICON_DROP_DISABLED  ICON                    "..\\AquaLangSetup\\AquaLangDisabled.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //

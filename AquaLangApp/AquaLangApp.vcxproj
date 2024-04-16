@@ -22,13 +22,13 @@
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -65,7 +65,7 @@
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>./;../include;../Utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -250,9 +250,7 @@
     <None Include="res\ApplicationRunning.bmp" />
     <None Include="res\ApplicationStartError.bmp" />
     <None Include="res\ApplicationStopped.bmp" />
-    <None Include="..\AquaLangSetup\res\AquaLang.ico" />
     <None Include="res\AquaLangConfigAdvisor.bmp" />
-    <None Include="..\AquaLangSetup\res\AquaLangDisabled.ico" />
     <None Include="res\AquaLangUpdates.bmp" />
     <None Include="res\License.txt" />
   </ItemGroup>
@@ -264,6 +262,10 @@
       <Project>{8ab52b70-5e0d-442d-a0b8-0c9b6972b141}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\AquaLangSetup\AquaLang.ico" />
+    <Image Include="..\AquaLangSetup\AquaLangDisabled.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

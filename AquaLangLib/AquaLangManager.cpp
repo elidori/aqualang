@@ -260,8 +260,15 @@ DWORD AquaLangManager::RunInThread()
 	Result res = m_UserInformationNotifier.Open(m_UserName.c_str(), m_Config.UserInfoSettings);
 	if(res != Result_Success)
 	{
-		Log(_T("AquaLangManager::RunInThread() - failed to open user info notifier (res=%d)\n"), res);
-		return (DWORD)-1;
+		if (res == Result_InvalidParameter && strlen(m_Config.UserInfoSettings.ServerUrl) == 0)
+		{
+
+		}
+		else
+		{
+			Log(_T("AquaLangManager::RunInThread() - failed to open user info notifier (res=%d)\n"), res);
+			return (DWORD)-1;
+		}
 	}
 	if(m_fRecovered)
 	{
@@ -269,6 +276,7 @@ DWORD AquaLangManager::RunInThread()
 		m_fRecovered = false;
 	}
 
+#ifndef SLIM_AQUALANG
 	Timer DbTimer;
 	if(m_LanguageHandler.Open(m_UserName.c_str(), m_Config) != Result_Success)
 	{
@@ -276,7 +284,7 @@ DWORD AquaLangManager::RunInThread()
 		return (DWORD)-1;
 	}
 	Log(_T("AquaLangManager::RunInThread - data base loaded in %I64d msec\n"), DbTimer.GetDiff());
-
+#endif
 	if(m_Config.TextConversionSettings.fActive)
 	{
 		_tstring HotKey;
@@ -349,10 +357,11 @@ DWORD AquaLangManager::RunInThread()
 
 	m_MessageWindow.CloseMessageWindow();
 
+#ifndef SLIM_AQUALANG
 	DbTimer.Restart();
 	m_LanguageHandler.Close();
 	Log(_T("AquaLangManager::RunInThread - Databased saved in %I64d msec\n"), DbTimer.GetDiff());
-
+#endif
 	m_TextLanguageConverter.Close();
 	m_TextConvertAdvisor.Close();
 	m_WebSearchHandler.Close();

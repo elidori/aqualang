@@ -706,9 +706,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\AquaLangSetup\res\AquaLang.ico">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="res\AquaLangIcon.bmp">
       <Filter>Resource Files</Filter>
     </None>
@@ -795,5 +792,10 @@
     <ResourceCompile Include="AquaLangLib.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\AquaLangSetup\AquaLang.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

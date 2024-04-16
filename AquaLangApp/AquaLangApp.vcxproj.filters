@@ -387,13 +387,7 @@
     <None Include="res\ApplicationStopped.bmp">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="..\AquaLangSetup\res\AquaLang.ico">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="res\AquaLangConfigAdvisor.bmp">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="..\AquaLangSetup\res\AquaLangDisabled.ico">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="res\AquaLangUpdates.bmp">
@@ -407,5 +401,13 @@
     <ResourceCompile Include="AquaLangApp.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\AquaLangSetup\AquaLang.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\AquaLangSetup\AquaLangDisabled.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

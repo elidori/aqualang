@@ -36,3 +36,5 @@ typedef __int64    index_t;
 #else
 typedef _W64 int   index_t;
 #endif
+
+#define SLIM_AQUALANG

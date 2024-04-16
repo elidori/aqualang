@@ -88,6 +88,18 @@ bool AquaLangImpl::Run(bool fFirstRunAfterInstall, bool fStartUpRun, bool fRunni
 	ConfigurationManager Configurator(m_UserName.c_str());
 	Configurator.LoadSettings(Config);
 
+#ifdef SLIM_AQUALANG
+	Config.BalloonTipSettings.fActive = false;
+	Config.WebBrowseSettings.fActive = false;
+	Config.CalcSettings.fActive = false;
+	Config.GuessLanguageSettings.fActive = false;
+	Config.SwapSettings.fActive = false;
+	strcpy_s(Config.UserInfoSettings.ServerUrl, sizeof(Config.UserInfoSettings.ServerUrl), "");
+	strcpy_s(Config.VersionUpdateSettings.ServerUrl, sizeof(Config.VersionUpdateSettings.ServerUrl), "");
+	Config.NotificationArea.fShowIcon = false;
+	Config.NotificationArea.fShowTipOfTheDay = false;
+#endif
+
 	ConfigAdvisorManager ConfigAdvisor;
 	// not using this feature anymore
 //	ConfigAdvisor.Open(AQUALANG_CONFIGURATION_WINDOW_CAPTION, m_UserName.c_str());
@@ -104,7 +116,7 @@ bool AquaLangImpl::Run(bool fFirstRunAfterInstall, bool fStartUpRun, bool fRunni
 
 	if(!fRunningFromWatchdog)
 	{
-		if(!m_Watchdog.CreateWatchdog())
+		if (!m_Watchdog.CreateWatchdog())
 		{
 			Log(_T("AquaLangImpl::Run - failed creating watchdog process\n"));
 		}
@@ -316,6 +328,7 @@ bool AquaLangImpl::Upgrade()
 bool AquaLangImpl::Uninstall()
 {
 	Stop(true);
+	Sleep(3000); // wait for the ballon to fade out
 	ConfigurationManager Configurator(m_UserName.c_str());
 	Configurator.StopRunningDialog(AQUALANG_CONFIGURATION_WINDOW_CAPTION, m_UserName.c_str());
 

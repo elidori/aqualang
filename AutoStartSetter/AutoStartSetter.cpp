@@ -124,7 +124,7 @@ int _tmain(int argc, TCHAR *argv[])
 				&lpsNameOffset
 			);
 
-			_tcscpy_s(lpsNameOffset, sizeof(FilePath) / sizeof(FilePath[0]) - (lpsNameOffset - FilePath), L"/AquaLangApp.exe");
+			_tcscpy_s(lpsNameOffset, sizeof(FilePath) / sizeof(FilePath[0]) - (lpsNameOffset - FilePath), L"/AquaLang.exe");
 			appFullPath = FilePath;
 		}
 		else
